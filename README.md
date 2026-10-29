@@ -26,3 +26,8 @@ Este proyecto despliega una solución integral de datos para una plataforma de c
 
 ## 📊 Dashboard Visual (UI/UX)
 El reporte final implementa un diseño oscuro de alto impacto visual (Estilo Web App) con bordes suavizados a 12px, sombras paralelas y navegación intuitiva para la toma de decisiones directivas.
+### 3. Automatización & Ciencia de Datos (Python)
+* **Ingeniería de Tuberías:** Conexión segura mediante `pyodbc` y `SQLAlchemy` a la instancia de SQL Server para extraer datos relacionales hacia DataFrames de `Pandas`.
+* **Calidad de Datos (Data Cleansing):** Automatización de limpieza masiva usando `NumPy` para imputar valores nulos (`NaN`), estandarizar variables categóricas a mayúsculas y limpiar espacios en blanco (`.strip()`).
+* **Análisis Estadístico Avanzado:** Cálculo de matrices de **Correlación de Pearson** para evaluar el impacto financiero de las estrategias de precios (`Descuentos` vs `Total Ingresos`).
+* **Visualización Científica:** Diseño de gráficos estadísticos avanzados (Boxplots) con `Seaborn` y `Matplotlib` bajo estándares de alto contraste para auditoría de negocio.
