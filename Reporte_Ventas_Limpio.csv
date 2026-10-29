@@ -1,0 +1,20 @@
+﻿ID Cliente,Nombre Cliente,ID Producto,Nombre Producto,Fecha Venta,Total Cantidad Vendida,Total Ingresos,Ticket Promedio Por Producto,Comentarios_Cliente,Descuento_Aplicado
+1,Carlos Mendoza,1,Laptop Pro 15,2026-10-23 13:09:35.850,2,2400.0,2400.0,EXCELENTE PRODUCTO,10.5
+1,Carlos Mendoza,1,Laptop Pro 15,2026-10-24 09:32:03.647,1,1200.0,1200.0,MAL SERVICIO,0.0
+1,Carlos Mendoza,1,Laptop Pro 15,2026-10-26 16:44:47.957,1,1200.0,1200.0,TODO OK,5.0
+1,Carlos Mendoza,1,Laptop Pro 15,2026-10-26 17:13:20.230,1,1200.0,1200.0,NAN,0.0
+1,Carlos Mendoza,7,Cargador Carga Rápida,2026-10-24 09:32:03.653,3,75.0,75.0,BIEN,15.0
+1,Carlos Mendoza,7,Cargador Carga Rápida,2026-10-26 16:44:47.963,3,75.0,75.0,PÉSIMO,0.0
+1,Carlos Mendoza,7,Cargador Carga Rápida,2026-10-26 17:13:20.233,3,75.0,75.0,EXCELENTE PRODUCTO,10.5
+2,Ana Martínez,1,Laptop Pro 15,2026-10-24 09:32:03.653,1,1200.0,1200.0,MAL SERVICIO,0.0
+2,Ana Martínez,1,Laptop Pro 15,2026-10-26 16:44:47.963,1,1200.0,1200.0,TODO OK,5.0
+2,Ana Martínez,1,Laptop Pro 15,2026-10-26 17:13:20.233,1,1200.0,1200.0,NAN,0.0
+2,Ana Martínez,4,Teclado Mecánico RGB,2026-10-24 09:32:03.650,2,170.0,170.0,BIEN,15.0
+2,Ana Martínez,4,Teclado Mecánico RGB,2026-10-26 16:44:47.960,2,170.0,170.0,PÉSIMO,0.0
+2,Ana Martínez,4,Teclado Mecánico RGB,2026-10-26 17:13:20.230,2,170.0,170.0,EXCELENTE PRODUCTO,10.5
+3,Luis Rodríguez,5,Audífonos HyperX,2026-10-24 09:32:03.650,1,120.0,120.0,MAL SERVICIO,0.0
+3,Luis Rodríguez,5,Audífonos HyperX,2026-10-26 16:44:47.960,1,120.0,120.0,TODO OK,5.0
+3,Luis Rodríguez,5,Audífonos HyperX,2026-10-26 17:13:20.230,1,120.0,120.0,NAN,0.0
+4,María Elena Gómez,6,Silla Ergonómica Pro,2026-10-24 09:32:03.650,1,299.0,299.0,BIEN,15.0
+4,María Elena Gómez,6,Silla Ergonómica Pro,2026-10-26 16:44:47.960,1,299.0,299.0,PÉSIMO,0.0
+4,María Elena Gómez,6,Silla Ergonómica Pro,2026-10-26 17:13:20.233,1,299.0,299.0,EXCELENTE PRODUCTO,10.5
