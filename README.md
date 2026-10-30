@@ -31,3 +31,5 @@ El reporte final implementa un diseño oscuro de alto impacto visual (Estilo Web
 * **Calidad de Datos (Data Cleansing):** Automatización de limpieza masiva usando `NumPy` para imputar valores nulos (`NaN`), estandarizar variables categóricas a mayúsculas y limpiar espacios en blanco (`.strip()`).
 * **Análisis Estadístico Avanzado:** Cálculo de matrices de **Correlación de Pearson** para evaluar el impacto financiero de las estrategias de precios (`Descuentos` vs `Total Ingresos`).
 * **Visualización Científica:** Diseño de gráficos estadísticos avanzados (Boxplots) con `Seaborn` y `Matplotlib` bajo estándares de alto contraste para auditoría de negocio.
+* **Orquestación y Automatización (Data Ops):** Creación de un script de infraestructura de Windows (`.bat`) para activar el entorno virtual de forma silenciosa y ejecutar el pipeline completo de ingeniería y ciencia de datos con un solo clic.
+* **Optimización del Motor (SQL Tuning):** Diseño e implementación de índices no agrupados (`NONCLUSTERED INDEX`) en llaves foráneas y variables de tiempo, reduciendo los tiempos de respuesta del servidor en consultas masivas.
