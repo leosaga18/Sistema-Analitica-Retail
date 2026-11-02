@@ -33,3 +33,7 @@ El reporte final implementa un diseño oscuro de alto impacto visual (Estilo Web
 * **Visualización Científica:** Diseño de gráficos estadísticos avanzados (Boxplots) con `Seaborn` y `Matplotlib` bajo estándares de alto contraste para auditoría de negocio.
 * **Orquestación y Automatización (Data Ops):** Creación de un script de infraestructura de Windows (`.bat`) para activar el entorno virtual de forma silenciosa y ejecutar el pipeline completo de ingeniería y ciencia de datos con un solo clic.
 * **Optimización del Motor (SQL Tuning):** Diseño e implementación de índices no agrupados (`NONCLUSTERED INDEX`) en llaves foráneas y variables de tiempo, reduciendo los tiempos de respuesta del servidor en consultas masivas.
+## 💼 Caso de Estudio Avanzado: Diagnóstico de Churn & Fuga de Ingresos
+* **Capa de Servidor (SQL Server):** Creación de la vista avanzada `vw_DiagnosticoChurn` utilizando funciones de cálculo de fechas (`DATEDIFF`) para identificar clientes inactivos con más de 5 días desde su última transacción.
+* **Pipeline de Acción (Pandas):** Desarrollo del script `04_alerta_churn.py` para conectarse a la vista, aplicar filtrado flexible de cadenas de texto (`.str.contains()`) y aislar de forma automática a los usuarios en riesgo de fuga.
+* **Entregable Comercial:** Exportación automatizada hacia el reporte de negocio de alta prioridad `Clientes_En_Riesgo_Fuga.xlsx` enfocado en estrategias de retención del equipo de Customer Success.
