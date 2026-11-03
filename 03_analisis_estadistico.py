@@ -61,4 +61,15 @@ plt.grid(axis='y', linestyle='--', alpha=0.3)
 # Mostrar el gráfico en pantalla
 print("🖥️ Abriendo ventana del gráfico estadístico...")
 plt.tight_layout()
-plt.show()
+# --- Si deseas que el ejecutable pare hasta que cierre la grafica ---
+# plt.show()
+# --- Si nó, REEMPLAZA plt.show() POR ESTO ---
+import os
+carpeta_actual = os.path.dirname(os.path.abspath(__file__))
+ruta_grafico = os.path.join(carpeta_actual, 'Grafico_Dispersión_Ingresos.png')
+
+# Guarda el gráfico físicamente como imagen de alta resolución sin pausar la consola
+plt.savefig(ruta_grafico, dpi=300)
+plt.close() # Cierra el gráfico en memoria
+
+print(f"💾 ¡Gráfico guardado automáticamente como imagen en:\n {ruta_grafico}")
