@@ -28,7 +28,7 @@ df['Descuento_Aplicado'] = np.resize(descuentos_basura, len(df))
 # -------------------------------------------------------------------
 
 # Tarea A: Contar cuántos nulos (vacíos) tenemos por columna antes de avanzar
-print(f"🔍 Conteo de valores nulos iniciales:\n{df.isnull().sum()}\n")
+print(f"--- Conteo de valores nulos iniciales:\n{df.isnull().sum()}\n")
 print("-" * 70)
 
 # Tarea B: Eliminar espacios invisibles al inicio y al final de los textos (.strip())
@@ -46,13 +46,13 @@ df['Descuento_Aplicado'] = df['Descuento_Aplicado'].fillna(0.0)
 # -------------------------------------------------------------------
 # 🏁 RESULTADO FINAL
 # -------------------------------------------------------------------
-print("✅ 2. DATOS IMPECABLES (Después de la limpieza de Pandas):")
+print("--- 2. DATOS IMPECABLES (Después de la limpieza de Pandas):")
 print(df[['Nombre Cliente', 'Comentarios_Cliente', 'Descuento_Aplicado']].to_string(index=False))
 
 # -------------------------------------------------------------------
 # 📦 EXPORTACIÓN DE LOS RESULTADOS (Data Delivery)
 # -------------------------------------------------------------------
-print("\n📦 Exportando datos limpios a archivos locales...")
+print("\n--- Exportando datos limpios a archivos locales...")
 
 # 1. Exportar a CSV (Ideal para sistemas masivos o bases de datos)
 df.to_csv('Reporte_Ventas_Limpio.csv', index=False, encoding='utf-8-sig')
@@ -61,4 +61,4 @@ df.to_csv('Reporte_Ventas_Limpio.csv', index=False, encoding='utf-8-sig')
 # Nota: Para esto instalaremos rápidamente una pequeña librería de soporte
 df.to_excel('Reporte_Ventas_Limpio.xlsx', index=False)
 
-print("💾 ¡Archivos 'Reporte_Ventas_Limpio.csv' y '.xlsx' guardados con éxito en tu carpeta!")
+print("--- ¡Archivos 'Reporte_Ventas_Limpio.csv' y '.xlsx' guardados con éxito en tu carpeta!")

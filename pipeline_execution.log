@@ -1,0 +1,148 @@
+[2026-11-07 16:08:32] 🚀 INICIANDO EJECUCIÓN DEL PIPELINE MAESTRO...
+[2026-11-07 16:08:32] 🔐 Usando entorno virtual: C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\venv\Scripts\python.exe
+[2026-11-07 16:08:33] ⏳ Ejecutando módulo: 02_limpieza_datos.py...
+[2026-11-07 16:08:36] ❌ ERROR en módulo 02_limpieza_datos.py:
+[2026-11-07 16:08:36] C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\02_limpieza_datos.py:10: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql("SELECT * FROM vw_ConsolidadoAnalitico", pyodbc.connect(conn_str))
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\02_limpieza_datos.py", line 31, in <module>
+    print(f"\U0001f50d Conteo de valores nulos iniciales:\n{df.isnull().sum()}\n")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+
+[2026-11-07 16:08:36] ⚠️ PIPELINE ABORTADO debido a fallos en la secuencia de ejecución.
+
+[2026-11-07 16:44:10] 🚀 INICIANDO EJECUCIÓN DEL PIPELINE MAESTRO...
+[2026-11-07 16:44:10] 🔐 Usando entorno virtual: C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\venv\Scripts\python.exe
+[2026-11-07 16:44:10] ⏳ Ejecutando módulo: 02_limpieza_datos.py...
+[2026-11-07 16:44:12] ❌ ERROR en módulo 02_limpieza_datos.py:
+[2026-11-07 16:44:12] C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\02_limpieza_datos.py:10: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  df = pd.read_sql("SELECT * FROM vw_ConsolidadoAnalitico", pyodbc.connect(conn_str))
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\02_limpieza_datos.py", line 49, in <module>
+    print("\u2705 2. DATOS IMPECABLES (Después de la limpieza de Pandas):")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+[2026-11-07 16:44:12] ⚠️ PIPELINE ABORTADO debido a fallos en la secuencia de ejecución.
+
+[2026-11-07 16:46:10] 🚀 INICIANDO EJECUCIÓN DEL PIPELINE MAESTRO...
+[2026-11-07 16:46:10] 🔐 Usando entorno virtual: C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\venv\Scripts\python.exe
+[2026-11-07 16:46:10] ⏳ Ejecutando módulo: 02_limpieza_datos.py...
+[2026-11-07 16:46:14] ✅ Módulo 02_limpieza_datos.py completado con éxito.
+[2026-11-07 16:46:14] ⏳ Ejecutando módulo: 03_analisis_estadistico.py...
+[2026-11-07 16:46:20] ❌ ERROR en módulo 03_analisis_estadistico.py:
+[2026-11-07 16:46:20] Traceback (most recent call last):
+  File "C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\03_analisis_estadistico.py", line 10, in <module>
+    print("\u2705 Base de datos cargada con éxito para análisis estadístico.\n")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+[2026-11-07 16:46:20] ⚠️ PIPELINE ABORTADO debido a fallos en la secuencia de ejecución.
+
+[2026-11-07 16:47:45] 🚀 INICIANDO EJECUCIÓN DEL PIPELINE MAESTRO...
+[2026-11-07 16:47:45] 🔐 Usando entorno virtual: C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\venv\Scripts\python.exe
+[2026-11-07 16:47:45] ⏳ Ejecutando módulo: 02_limpieza_datos.py...
+[2026-11-07 16:47:48] ✅ Módulo 02_limpieza_datos.py completado con éxito.
+[2026-11-07 16:47:48] ⏳ Ejecutando módulo: 03_analisis_estadistico.py...
+[2026-11-07 16:47:53] ❌ ERROR en módulo 03_analisis_estadistico.py:
+[2026-11-07 16:47:53] Traceback (most recent call last):
+  File "C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\03_analisis_estadistico.py", line 10, in <module>
+    print("\u2705 Base de datos cargada con éxito para análisis estadístico.\n")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+[2026-11-07 16:47:53] ⚠️ PIPELINE ABORTADO debido a fallos en la secuencia de ejecución.
+
+[2026-11-07 16:48:43] 🚀 INICIANDO EJECUCIÓN DEL PIPELINE MAESTRO...
+[2026-11-07 16:48:43] 🔐 Usando entorno virtual: C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\venv\Scripts\python.exe
+[2026-11-07 16:48:43] ⏳ Ejecutando módulo: 02_limpieza_datos.py...
+[2026-11-07 16:48:46] ✅ Módulo 02_limpieza_datos.py completado con éxito.
+[2026-11-07 16:48:46] ⏳ Ejecutando módulo: 03_analisis_estadistico.py...
+[2026-11-07 16:48:51] ❌ ERROR en módulo 03_analisis_estadistico.py:
+[2026-11-07 16:48:51] Traceback (most recent call last):
+  File "C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\03_analisis_estadistico.py", line 24, in <module>
+    print("\n\U0001f4a1 Interpretación Técnica:")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4a1' in position 2: character maps to <undefined>
+
+[2026-11-07 16:48:51] ⚠️ PIPELINE ABORTADO debido a fallos en la secuencia de ejecución.
+
+[2026-11-07 16:50:54] 🚀 INICIANDO EJECUCIÓN DEL PIPELINE MAESTRO...
+[2026-11-07 16:50:54] 🔐 Usando entorno virtual: C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\venv\Scripts\python.exe
+[2026-11-07 16:50:54] ⏳ Ejecutando módulo: 02_limpieza_datos.py...
+[2026-11-07 16:50:57] ✅ Módulo 02_limpieza_datos.py completado con éxito.
+[2026-11-07 16:50:57] ⏳ Ejecutando módulo: 03_analisis_estadistico.py...
+[2026-11-07 16:51:03] ✅ Módulo 03_analisis_estadistico.py completado con éxito.
+[2026-11-07 16:51:03] ⏳ Ejecutando módulo: 04_alerta_churn.py...
+[2026-11-07 16:51:04] ❌ ERROR en módulo 04_alerta_churn.py:
+[2026-11-07 16:51:04] Traceback (most recent call last):
+  File "C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\04_alerta_churn.py", line 11, in <module>
+    print("\u23f3 Conectando al servidor para extraer diagnóstico de Churn...")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u23f3' in position 0: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\04_alerta_churn.py", line 38, in <module>
+    print(f"\U0001f6a8 Error en la ejecución del pipeline: {e}")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f6a8' in position 0: character maps to <undefined>
+
+[2026-11-07 16:51:04] ⚠️ PIPELINE ABORTADO debido a fallos en la secuencia de ejecución.
+
+[2026-11-07 16:52:38] 🚀 INICIANDO EJECUCIÓN DEL PIPELINE MAESTRO...
+[2026-11-07 16:52:38] 🔐 Usando entorno virtual: C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\venv\Scripts\python.exe
+[2026-11-07 16:52:38] ⏳ Ejecutando módulo: 02_limpieza_datos.py...
+[2026-11-07 16:52:41] ✅ Módulo 02_limpieza_datos.py completado con éxito.
+[2026-11-07 16:52:41] ⏳ Ejecutando módulo: 03_analisis_estadistico.py...
+[2026-11-07 16:52:47] ✅ Módulo 03_analisis_estadistico.py completado con éxito.
+[2026-11-07 16:52:47] ⏳ Ejecutando módulo: 04_alerta_churn.py...
+[2026-11-07 16:52:49] ✅ Módulo 04_alerta_churn.py completado con éxito.
+[2026-11-07 16:52:49] ⏳ Ejecutando módulo: 05_modelo_predictivo.py...
+[2026-11-07 16:52:54] ❌ ERROR en módulo 05_modelo_predictivo.py:
+[2026-11-07 16:52:54] Traceback (most recent call last):
+  File "C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\05_modelo_predictivo.py", line 10, in <module>
+    print("\u2705 Base de datos cargada para entrenamiento de IA.\n")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python313\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+[2026-11-07 16:52:54] ⚠️ PIPELINE ABORTADO debido a fallos en la secuencia de ejecución.
+
+[2026-11-07 16:54:30] 🚀 INICIANDO EJECUCIÓN DEL PIPELINE MAESTRO...
+[2026-11-07 16:54:30] 🔐 Usando entorno virtual: C:\Users\Lenovo\Documents\CURSOS\AI Estudio de Analista\Portafolio Técnico\Sistema-Analitica-Retail\venv\Scripts\python.exe
+[2026-11-07 16:54:30] ⏳ Ejecutando módulo: 02_limpieza_datos.py...
+[2026-11-07 16:54:33] ✅ Módulo 02_limpieza_datos.py completado con éxito.
+[2026-11-07 16:54:33] ⏳ Ejecutando módulo: 03_analisis_estadistico.py...
+[2026-11-07 16:54:39] ✅ Módulo 03_analisis_estadistico.py completado con éxito.
+[2026-11-07 16:54:39] ⏳ Ejecutando módulo: 04_alerta_churn.py...
+[2026-11-07 16:54:41] ✅ Módulo 04_alerta_churn.py completado con éxito.
+[2026-11-07 16:54:41] ⏳ Ejecutando módulo: 05_modelo_predictivo.py...
+[2026-11-07 16:54:45] ✅ Módulo 05_modelo_predictivo.py completado con éxito.
+[2026-11-07 16:54:45] 🏁 ¡PIPELINE COMPLETO EJECUTADO CON ÉXITO! Todos los reportes e IA actualizados.
+

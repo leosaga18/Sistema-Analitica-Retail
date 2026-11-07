@@ -7,9 +7,9 @@ from sklearn.metrics import accuracy_score
 # 1. Cargamos los datos consolidados que limpiaste en los pasos previos
 try:
     df = pd.read_excel('Reporte_Ventas_Limpio.xlsx')
-    print("✅ Base de datos cargada para entrenamiento de IA.\n")
+    print("--- Base de datos cargada para entrenamiento de IA.\n")
 except FileNotFoundError:
-    print("🚨 Ejecuta el script 02 primero para generar el archivo Excel.")
+    print("--- Ejecuta el script 02 primero para generar el archivo Excel.")
     exit()
 
 # -------------------------------------------------------------------
@@ -31,7 +31,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 # -------------------------------------------------------------------
 # 🧠 ENTRENAMIENTO DEL MODELO (Machine Learning)
 # -------------------------------------------------------------------
-print("🤖 Entrenando el algoritmo de Clasificación (Árbol de Decisión)...")
+print("--- Entrenando el algoritmo de Clasificación (Árbol de Decisión)...")
 modelo = DecisionTreeClassifier(random_state=42)
 modelo.fit(X_train, y_train)
 
@@ -39,7 +39,7 @@ modelo.fit(X_train, y_train)
 predicciones = modelo.predict(X_test)
 precision = accuracy_score(y_test, predicciones)
 
-print(f"🎯 Precisión del Modelo Predictivo: {precision * 100:.2f}%")
+print(f"--- Precisión del Modelo Predictivo: {precision * 100:.2f}%")
 print("-" * 60)
 
 # 🔮 PREDICCIÓN CON UN CLIENTE NUEVO FICICTIO
@@ -47,8 +47,8 @@ print("-" * 60)
 cliente_nuevo = [[1, 1200.00, 15.0]]
 resultado_prediccion = modelo.predict(cliente_nuevo)
 
-print("🔮 RESULTADO DE PREDICCIÓN PARA NUEVO CLIENTE:")
+print("--- RESULTADO DE PREDICCIÓN PARA NUEVO CLIENTE:")
 if resultado_prediccion[0] == 1:
-    print("🚨 ALERTA MODELO IA: El cliente nuevo muestra patrones de alto riesgo de FUGA.")
+    print("--- ALERTA MODELO IA: El cliente nuevo muestra patrones de alto riesgo de FUGA.")
 else:
-    print("✅ MODELO IA: El cliente nuevo muestra patrones estables de fidelidad.")
+    print("--- MODELO IA: El cliente nuevo muestra patrones estables de fidelidad.")

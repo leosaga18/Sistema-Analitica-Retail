@@ -7,35 +7,35 @@ import matplotlib.pyplot as plt
 # (Garantizamos que usamos la base de datos completa de 19 filas)
 try:
     df = pd.read_excel('Reporte_Ventas_Limpio.xlsx')
-    print("✅ Base de datos cargada con éxito para análisis estadístico.\n")
+    print("--- Base de datos cargada con éxito para análisis estadístico.\n")
 except FileNotFoundError:
-    print("🚨 No se encontró el archivo Excel. Asegúrate de correr el script 02 primero.")
+    print("--- No se encontró el archivo Excel. Asegúrate de correr el script 02 primero.")
     exit()
 
 # -------------------------------------------------------------------
 # 📊 1. ANÁLISIS DE CORRELACIÓN MATEMÁTICA (Métrica Senior)
 # -------------------------------------------------------------------
-print("🧠 CALCULANDO CORRELACIÓN DE PEARSON:")
+print("--- CALCULANDO CORRELACIÓN DE PEARSON:")
 # Evaluamos la relación numérica entre Descuentos, Cantidad y Total Ingresos
 columnas_numericas = ['Total Cantidad Vendida', 'Total Ingresos', 'Descuento_Aplicado']
 matriz_correlacion = df[columnas_numericas].corr(method='pearson')
 
 print(matriz_correlacion)
-print("\n💡 Interpretación Técnica:")
+print("\n--- Interpretación Técnica:")
 correlacion_descuento_ingreso = matriz_correlacion.loc['Total Ingresos', 'Descuento_Aplicado']
 print(f"-> La correlación entre Ingresos y Descuentos es de: {correlacion_descuento_ingreso:.2f}")
 if correlacion_descuento_ingreso > 0.5:
-    print("🔥 Conclusión: Existe una fuerte relación positiva. A mayor descuento, los ingresos suben significativamente.")
+    print("--- Conclusión: Existe una fuerte relación positiva. A mayor descuento, los ingresos suben significativamente.")
 elif correlacion_descuento_ingreso > 0:
-    print("📉 Conclusión: La relación es positiva pero débil. Los descuentos ayudan un poco, pero no son el motor principal.")
+    print("--- Conclusión: La relación es positiva pero débil. Los descuentos ayudan un poco, pero no son el motor principal.")
 else:
-    print("🚨 Conclusión: La correlación es negativa. Los descuentos están destruyendo el valor del ingreso total.")
+    print("--- Conclusión: La correlación es negativa. Los descuentos están destruyendo el valor del ingreso total.")
 print("-" * 70)
 
 # -------------------------------------------------------------------
 # 🎨 2. GRÁFICO ESTADÍSTICO (Distribución de Ingresos por Producto)
 # -------------------------------------------------------------------
-print("🎨 Generando boxplot estadístico de ingresos...")
+print("--- Generando boxplot estadístico de ingresos...")
 
 # Configuramos un estilo visual moderno y oscuro
 plt.style.use('dark_background')
@@ -59,7 +59,7 @@ plt.xticks(rotation=15)
 plt.grid(axis='y', linestyle='--', alpha=0.3)
 
 # Mostrar el gráfico en pantalla
-print("🖥️ Abriendo ventana del gráfico estadístico...")
+print("--- Abriendo ventana del gráfico estadístico...")
 plt.tight_layout()
 # --- Si deseas que el ejecutable pare hasta que cierre la grafica ---
 # plt.show()
@@ -72,4 +72,4 @@ ruta_grafico = os.path.join(carpeta_actual, 'Grafico_Dispersión_Ingresos.png')
 plt.savefig(ruta_grafico, dpi=300)
 plt.close() # Cierra el gráfico en memoria
 
-print(f"💾 ¡Gráfico guardado automáticamente como imagen en:\n {ruta_grafico}")
+print(f"--- ¡Gráfico guardado automáticamente como imagen en:\n {ruta_grafico}")
